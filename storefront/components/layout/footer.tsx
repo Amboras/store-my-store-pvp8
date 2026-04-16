@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { PawPrint, Instagram, Facebook, Mail } from 'lucide-react'
+import { PawPrint, Share2, Rss, Mail } from 'lucide-react'
 import { clearConsent } from '@/lib/cookie-consent'
 import { usePolicies } from '@/hooks/use-policies'
 
@@ -54,10 +54,10 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 mt-5">
               <a href="#" aria-label="Instagram" className="p-2 rounded-full border border-white/20 hover:border-[hsl(171,45%,55%)] hover:text-[hsl(171,45%,55%)] transition-colors">
-                <Instagram className="h-4 w-4" />
+                <Share2 className="h-4 w-4" />
               </a>
               <a href="#" aria-label="Facebook" className="p-2 rounded-full border border-white/20 hover:border-[hsl(171,45%,55%)] hover:text-[hsl(171,45%,55%)] transition-colors">
-                <Facebook className="h-4 w-4" />
+                <Rss className="h-4 w-4" />
               </a>
               <a href="/contact" aria-label="Email" className="p-2 rounded-full border border-white/20 hover:border-[hsl(171,45%,55%)] hover:text-[hsl(171,45%,55%)] transition-colors">
                 <Mail className="h-4 w-4" />
